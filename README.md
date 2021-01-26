@@ -15,4 +15,8 @@ Minimum Required: Raspberry Pi 3B+
 
 **Strongly** recommended: Raspberry Pi 4
 
-Both balenaSound and LedFx have minimum requirements at the 3B+, and balenaSound still has issues on the 3B+. It's possible to run them both on a 3B+, but it has significant lag. 
+Both balenaSound and LedFx alone have minimum requirements at the 3B+, and balenaSound alone still has issues on the 3B+. It's possible to run them both on a 3B+, but it has significant lag. 
+
+## Configuration
+
+See [balenaSound customization](https://sound.balenalabs.io/docs/customization)
