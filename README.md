@@ -1,5 +1,5 @@
 # LedFx-balenaSound
-[LedFx](https://github.com/ahodges9/LedFx) and [balenaSound](https://github.com/balenalabs/balena-sound) With One Click!
+[LedFx](https://github.com/LedFx/LedFx) and [balenaSound](https://github.com/balenalabs/balena-sound) With One Click!
 
 ## Deployment
 
