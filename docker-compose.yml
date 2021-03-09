@@ -16,7 +16,7 @@ services:
     environment: 
       - HOST=multiroom-server
     ports:
-      - 8888:8888
+      - 80:8888
     volumes:
       - ledfx:/root/.ledfx
 

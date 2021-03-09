@@ -20,6 +20,7 @@ Both balenaSound and LedFx alone have minimum requirements at the 3B+, and balen
 ## Other notes
 
 - By default, this deploys the dev branch of LedFx. The maintainers of LedFx recommend the dev branch, but it can be a little less stable, so if you're having issues, you can change it in the `docker-compose.yml`. Just change the tag on `shirom/ledfx:dev` to `shirom/ledfx`.
+- Typically, LedFx will run on port `8888`, but this container runs on port `80`. This is done to take advantage of Balena's public device URL feature, but you should keep that change in mind when connecting using a browser. 
 
 ## Configuration
 
