@@ -11,7 +11,7 @@ volumes:
 
 services:
   ledfx:
-    image: shirom/ledfx:dev
+    image: shirom/ledfx
     container_name: ledfx
     environment: 
       - HOST=multiroom-server
