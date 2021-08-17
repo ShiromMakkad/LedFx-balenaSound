@@ -1,4 +1,4 @@
-version: "2"
+version: "2.0.0"
 slug: "ledfx-balena-sound"
 name: "LedFx-balenaSound"
 type: "sw.application"
