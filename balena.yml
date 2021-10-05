@@ -2,6 +2,11 @@ version: "2"
 slug: "ledfx-balena-sound"
 name: "LedFx-balenaSound"
 type: "sw.application"
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/ShiromMakkad/LedFx-balenaSound'
 data:
   description: "LedFx and balenaSound With One Click!"
   defaultDeviceType: "raspberry-pi"
