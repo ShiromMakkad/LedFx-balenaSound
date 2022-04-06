@@ -19,8 +19,10 @@ Both balenaSound and LedFx alone have minimum requirements at the 3B+, and balen
 
 ## Note:
 
-- The UPNP reciever is extremely buggy. See [balena/balena-sound#342](https://github.com/balenalabs/balena-sound/issues/342). This issue can also prevent other recievers from getting audio even after you've restarted the UPNP container, and there's no error logging to go with it. If you're not using UPNP, I strongly recommend disabling it to prevent it from interfering with the rest of the audio system. You can do this by adding the `SOUND_DISABLE_UPNP` environment variable in Balena after you deploy it. See [Configuration](#configuration).
-- Typically, LedFx will run on port `8888`, but this container runs on port `80`. This is done to take advantage of Balena's public device URL feature, but you should keep that change in mind when connecting using a browser. You can change this behavior in the `docker-compose.yml` by changing the line `80:8888` to `8888:8888`. 
+- The UPNP reciever is extremely buggy. See [balena/balena-sound#342](https://github.com/balenalabs/balena-sound/issues/342). This issue can also prevent other recievers from getting audio even after you've restarted the UPNP container, and there's no error logging to go with it. This is why UPNP is disabled by default by setting `SOUND_DISABLE_UPNP`. Remove this environment variable to enable UPNP. 
+- Typically, LedFx will run on port `8888`, but this container runs on port `80`. This is done to take advantage of Balena's public device URL feature, but you should keep that change in mind when connecting using a browser. You can change this behavior in the `docker-compose.yml` by changing the line `80:8888` to `8888:8888`. I also set `SOUND_SUPERVISOR_PORT` from port `80` to `8080` in balena.yml. You'll probably want to remove that environment variable. 
+- You can use the `shirom/ledfx:frontend_beta` tag to use the beta version of LedFx. 
+- You need to set `SOUND_SPOTIFY_USERNAME` and `SOUND_SPOTIFY_PASSWORD` to use Spotify. By default, Spotify is disabled by setting the environment variable `SOUND_DISABLE_SPOTIFY`. You'll also have to remove this variable to enable Spotify. See the balenaSound docs for more details. 
 
 ## Configuration
 

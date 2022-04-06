@@ -1,4 +1,4 @@
-version: "2.0.0"
+version: "1.3.0"
 slug: "ledfx-balena-sound"
 name: "LedFx-balenaSound"
 type: "sw.application"
@@ -10,6 +10,13 @@ assets:
 data:
   description: "LedFx and balenaSound With One Click!"
   defaultDeviceType: "raspberry-pi"
+  applicationEnvironmentVariables:
+    - SOUND_SUPERVISOR_PORT: 8080
+    - SOUND_VOLUME: 100
+    - SOUND_DISABLE_SPOTIFY: 1
+    - SOUND_DISABLE_UPNP: 1
+    - SOUND_DEVICE_NAME: "LedFx"
+    - BLUETOOTH_DEVICE_NAME: "LedFx"
   supportedDeviceTypes:
     - "raspberry-pi"
     - "raspberry-pi2"
