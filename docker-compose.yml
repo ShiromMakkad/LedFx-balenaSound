@@ -82,7 +82,7 @@ services:
     ports:
       - 49494:49494
 
-  # https://github.com/balenablocks/hostname
+  # https://github.com/balenalabs/hostname
   hostname:
     build: ./core/hostname
     restart: no
